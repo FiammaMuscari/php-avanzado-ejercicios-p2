@@ -1,0 +1,267 @@
+.container {
+  width:1080px;
+  margin:0px auto;
+  font-size:1em;
+  font-family: "Arial", Georgia, Serif;
+  font-size: 15px;
+}
+header {
+  text-align:center;
+  border: 1px solid #666;
+  background: #cccccc;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+section,aside {
+  margin-top: 5px;
+  padding: 10px;
+  -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
+}
+section {
+  float: left;
+  width: 70%;
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+aside {
+  float: right;
+  width: 25%;
+  background:#ccc;
+  color: #333;
+}
+nav {
+  padding:0.2%;
+  background:#f06156;
+  margin-top: 0.5%;
+}
+nav ul {
+  list-style-type:none;
+  padding:0px;
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li:hover {
+  background-color: #ccc;
+  text-decoration: underline;
+}
+nav ul li a {
+ display:inline-block;
+ text-align:center;
+ text-decoration:none;
+ color: #75302a;
+ font-weight: bold;
+  padding:6px 15px;
+  margin:2px;
+  background:#fafafa;
+  -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;border-radius:3px;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0px 10px 0px;
+  background-color: #333;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+}
+
+h2,h1 {
+  color: #f06156;
+}
+/* pantalla maximo 980px */
+@media screen and (max-width:980px) {
+  .container {
+    width:98%;
+  }
+  section {
+    width:68%;
+  }
+}
+ 
+/* pantalla maximo 700px */
+@media screen and (max-width:700px) {
+  aside,section {
+    float:none;
+    width:96%;
+    font-size:1.2em;
+  }
+  nav, section {
+    font-size:1.2em;
+  }
+  aside {
+    margin-top:5px;
+    background:#333;
+    color: #fff;
+  }
+  nav ul {
+    float:none;
+    clear:both;
+  }
+}
+ 
+ 
+/* pantalla maximo 480px */
+@media screen and (max-width:480px) {
+  aside {
+    display:block;
+    background:#333;
+    color: #fff;
+    font-size:1.5em;
+  }
+  nav, section {
+    font-size:1.5em;
+  }
+  section {
+    width:94%;
+  }
+  nav ul {
+    display: table;
+    text-align: center;
+    float: none;
+    width:100%;
+  }
+  nav ul li {
+    float:none;
+  }
+}
+
+form > input[type="date"] {
+  padding: 0.5em;
+  font-size:1rem;
+  font-family:monospace;
+  
+  border:1px solid #8292a2;
+  border-radius:0.25rem;
+  
+  cursor:pointer;
+}
+
+form > input[type="email"] {
+  padding: 0.5em;
+  font-size:1rem;
+  font-family:monospace;
+  
+  border:1px solid #8292a2;
+  border-radius:0.25rem;
+  
+  cursor:pointer;
+}
+form > input[type="textarea"] {
+  padding: 0.5em;
+  font-size:1rem;
+  font-family:monospace;
+  
+  border:1px solid #8292a2;
+  border-radius:0.25rem;
+  
+  cursor:pointer;
+}
+
+form > input[type="text"] {
+  padding: 0.5em;
+  font-size:1rem;
+  
+  font-family:monospace;
+  border:1px solid #8292a2;
+  border-radius:0.25rem;
+  
+  cursor:pointer;
+}
+form > input[type="email"]:focus {
+  outline:none;
+  border-color:#ff3a3a;
+  box-shadow:0 0 0 0.25rem rgba(250, 0, 0, 0.1);
+}
+form > input[type="textarea"]:focus {
+  outline:none;
+  border-color:#ff3a3a;
+  box-shadow:0 0 0 0.25rem rgba(250, 0, 0, 0.1);
+}
+form > input[type="date"]:focus {
+  outline:none;
+  border-color:#ff3a3a;
+  box-shadow:0 0 0 0.25rem rgba(250, 0, 0, 0.1);
+}
+form > input[type="text"]:focus {
+  outline:none;
+  border-color:#ff3a3a;
+  box-shadow:0 0 0 0.25rem rgba(250, 0, 0, 0.1);
+}
+
+form > input[type="submit"] {
+  background-color: #f06156;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size:16px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 10px;
+  width: 180px;
+}
+
+aside > div{
+  background-color:rgb(160, 160, 160);
+  display: flow-root;
+  justify-content: center;
+  gap: 1em;
+  font-family: system-ui;
+  margin: 1rem;
+  border-radius: 5px;
+  padding:0 0.5rem;
+  
+  
+}
+aside > div > div>h3,h1{
+  color: #413535;
+}
+aside > div > div>h1{
+  color: #d13710;
+}
+
+form > input[type="number"] {
+  padding: 0.5em;
+  font-size:1rem;
+  font-family:monospace;
+  width: 9em;
+  border:1px solid #8292a2;
+  border-radius:0.25rem;
+  
+  cursor:pointer;
+}
+form > input[type="number"]:focus {
+  outline:none;
+  border-color:#ff3a3a;
+  box-shadow:0 0 0 0.25rem rgba(250, 0, 0, 0.1);
+}
+aside > p{
+  color: #413535;
+  font-size: 1.3em;
+  font-family:monospace;
+}
+#enviarcoment{
+  margin-top:1rem;
+
+}
+
+#unidad6 > input[type="text"] {
+  padding: 0.5em;
+  font-size:1rem;
+  width: 9em;
+  font-family:monospace;
+  border:1px solid #8292a2;
+  border-radius:0.25rem;
+  
+  cursor:pointer;
+}
